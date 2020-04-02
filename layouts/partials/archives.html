@@ -1,0 +1,21 @@
+{{ $year := .Key }}
+{{ range (.Pages.GroupByDate "January") }}
+{{ $month := .Key }}
+<div class="pl-3">
+    {{ range .Pages }}
+    <div class="d-flex flex-row-reverse border-bottom list-br">
+      <p class="mr-auto list-p">
+          <i class="fas fa-angle-right"></i>
+          <a style="font-size:15.5px" href="{{ .URL | absURL }}">
+        {{ .Title }}
+        </a>
+      </p>
+    </div>  
+  <p class="text-right">
+<span class="list-time">
+{{ .Date.Format "02 Jan, 2006" }}
+</span>
+  </p>
+  {{ end }}
+</div>
+{{ end }}

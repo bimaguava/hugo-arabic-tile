@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ if .IsHome }}
+{{ $homepage := "Home" }}
+{{ with .Site.Menus.nav }}
+{{ range first 1 . }}
+{{ $homepage = .Name }}
+{{ end }}
+{{ end }}
+<title>{{ $homepage }} | {{ .Site.Title }}</title>
+{{ else }}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ end }}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+    <link href="/css/prism.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet"> 
+  </head>
+  
+    
+<body class="bg-body">
+    <header class="navbar navbar-header sticky-top navbar-expand-lg navbar-dark bg-navbar border-dark border-dark-top-0 border-dark-left-0 border-dark-right-0 rounded-bottom">
+        <div class="container">
+          <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_nav" aria-controls="navbar_nav" aria-expand="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbar_nav">
+        
+        <div class="navbar-nav ml-auto">
+      <form class="form-inline my-2 my-lg-0" action="https://bimagv.github.io/search/">
+    <input class="form-control mr-sm-2 p-chapt" type="text" name="q" placeholder="keywords" aria-label="Search">
+    <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+        </div>
+        </div>
+          </div>
+          </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <div class="ml-auto">
+              <span class="badge badge-blue-sea rounded-sweet"><i class="fas fa-hashtag"></i> QOTD</span>
+               <i class="fas fa-quote-left"></i>
+               <span style="font-size:14px">Time is more expensive than gold</span>
+               <span style="font-size:21px; font-family: 'Katibeh', cursive;">  :الوَقْتُ أَثْمَنُ مِنَ الذَّهَبِ </span> 
+               <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+        </nav>
+<main role="main" class="container-fluid col-lg-10 offset-lg-1">

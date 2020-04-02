@@ -1,0 +1,31 @@
+
+   <div class="meta-item p-3 border-bottom shadow-hover">
+
+      <strong><a class="title-link" 
+        href="{{ .Permalink }}">{{ .Title }}
+      </strong></a>
+      <p>
+        <span class="list-time">
+        {{ .Date.Format "02 Jan, 2006" }}
+        </span>
+      </p>
+
+
+      <div class="post-img" style="background-image: url('{{ absURL (default "img/default-header-img.tn-500x500.jpg" (default .Params.image .Params.thumbnail)) }}'); background-position: center;">
+        <a href="{{ .Permalink }}" class="scale">
+        </a>
+      </div>
+      <div class="clearfix"></div>
+      
+      {{ if .Params.Summary }} 
+      {{ .Params.Summary | markdownify }} 
+      {{ else }} 
+      {{ .Summary }}
+      {{ end }}
+
+      <div class="read-more">
+        <a href="{{ .Permalink }}" 
+           class="btn btn-sky btn-sm my-2 my-sm-2 btn-lg active" role="button" aria-pressed="true">See more ..</a>
+      </div>
+
+    </div>

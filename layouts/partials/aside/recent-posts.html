@@ -1,0 +1,18 @@
+<div class="card mb-3 rounded-rightside recent-posts">
+  
+  <div class="container m-aside">
+    <h5>Recent Posts</h5>
+    <div class="h-undl-pink"></div>
+  </div>
+
+  <ul class="m-aside-l2">
+    {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+    <li style="list-style:none;"><div class="tl-stamp">{{ .Date.Format "02 January 2006" | safeHTML }}</div>
+        <div class="item-inner">
+            <p class="item-title"><a href="{{ .Permalink }}" class="title">{{ .Title }}</a></p>
+        </div>
+    </li>
+{{ end }}
+  </ul>      
+
+</div>

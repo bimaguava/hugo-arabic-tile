@@ -1,0 +1,30 @@
+<!--/tags/name, /categories/name-->
+{{ partial "header.html" . }}
+<br/>
+<div class="row">
+  <main role="main" class="col-md-9">
+    <div class="container-fluid p-3 mb-3 rounded border shadow-hover bg-white p-chapt">
+
+      <header>
+        <h3>{{ .Section }}</h3>
+      </header>
+ 
+  <h5><i class="fas fa-thumbtack"></i> {{ .Title }}</h5>
+  <div class="h-undl-green"></div>
+
+      {{ .Content }}
+      {{ $posts := .Data.Pages }}
+
+    <section id="archive">
+    {{ range ($posts.GroupByDate "2006") }}
+    {{ partial "archives.html" . }}
+    {{ end }}
+    </section>
+
+  </main>
+  <aside class="col-md-3">
+    <!--{{ partial "aside/interest-topic.html" . }}-->
+    {{ partial "aside/rss.html" . }}
+</aside> 
+</div>
+{{ partial "footer.html" . }}

@@ -1,0 +1,314 @@
+/* Global ------------------------------------------------------------------------*/
+p {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 17px;
+}
+.bg-body {
+  background: #F8F9FA url("/img/arabtile.png") repeat scroll 12px 0px;
+}
+a {
+  color: #6a838d;
+}
+a:hover {
+  color: #38454d;
+}
+img {
+  border-radius: 5px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-chapt {
+  font-family: 'Balthazar', serif;
+  font-size: 19px;
+}
+
+/* card ---------------------------------------------------------------------*/
+.rounded-top {
+  border-top-right-radius: .790rem !important;
+  border-top-left-radius: .790rem !important;
+  box-shadow: 0 0.5rem 1.6rem rgba(128, 129, 129, 0.637);
+}
+.rounded-bottom {
+  border-bottom-right-radius: .700rem !important;
+  border-bottom-left-radius: .700rem !important;
+}
+.rounded {
+  border-radius: .790rem !important;
+  box-shadow: 0 0.5rem 1.6rem rgba(165, 167, 167, 0.637);
+}
+.rounded-topside  {
+  border-top-left-radius: .790rem !important;
+  border-top-right-radius: .790rem !important;
+}
+.rounded-botside  {
+  border-bottom-right-radius: .790rem !important;
+  border-bottom-left-radius: .790rem !important;
+}
+.rounded-rightside  {
+  border-bottom-right-radius: .790rem !important;
+  border-top-right-radius: .790rem  !important;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  box-shadow: 0 0.5rem 1rem rgba(225, 228, 228, 0.637);
+}
+.rounded-sweet  {
+  border-top-right-radius: .790rem !important;
+  border-bottom-left-radius: .790rem !important;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+.recent-posts  {
+  font-family: 'Merienda', cursive;
+}
+.categories {
+  font-family: 'Merienda', cursive;
+}
+.tags {
+  font-family: 'Merienda', cursive;
+}
+.rss {
+  font-family: 'Merienda', cursive;
+}
+.about  {
+  font-family: 'Merienda', cursive;
+}
+/* navbar ---------------------------------------------------------*/
+.bg-navbar {
+  background-color: #097485;
+  box-shadow: 0 0.2rem 0.5rem rgba(118, 119, 119, 0.637);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  /* sticky at top */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-family: 'Merienda', cursive;
+}
+.navbar-header  {
+  min-height: 70px;
+}
+
+/* Activity blog ---------------------------------------------------------*/
+/* Timeline Container */
+.timeline {
+  border-left: 5px solid #dddddd;
+  padding-bottom: 3em;
+  position: relative; 
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1.47em;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #dddddd;
+  border: 5px solid #dddddd; 
+}
+/* Individual Timeline Item */
+.tl-node {
+  padding-left: 1em;
+  margin-bottom: 3em;
+  position: relative; 
+}
+.tl-node a {
+  display: block; 
+}
+.tl-node:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.95em;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #fff;
+  border: 5px solid #dddddd; 
+}
+.tl-content a {
+  color: #222222; 
+}
+.tl-stamp {
+  font-size: 0.7em;
+  color: gray; 
+}
+
+/* some element --------------------------------------------------------*/
+.title-link  {
+  color: #4D80AE;
+  font-size: 23px;
+}
+.border-dark {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #29AAED !important;
+}
+.badge-blue {
+  background-color: #2290DC;
+  color: #FFFFFF;
+}
+.badge-pink {
+  background-color: #FC0FC0;
+  color: #FFFFFF;
+}
+.badge-blue-sea {
+  background-color: #2EB1F0;
+  color: #FFFFFF;
+  padding: 8.5px;
+}
+.btn-sky  {
+  background-color: #4D80AE;
+  color: #FFFFFF;
+}
+.h-undl-pink {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 10em;
+  border-bottom: 3px solid #fc0cf0;
+}
+.h-undl-blue {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 50px;
+  border-bottom: 3px solid #2290dc;
+}
+.h-undl-green {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 7em;
+  border-bottom: 3px solid #28a745;
+}
+
+/* Adding margin -------------------------------------------------------------*/
+.row {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.border-bottom {
+  margin-bottom: 4px;
+}
+/*summary, single*/
+.posts-badge  {
+  margin-left: 21px;
+  margin-right: -15px;
+}
+/*single*/
+.m-posts {
+  font-size: 14px;
+  margin-top: -20px;
+  margin-bottom: 7px;
+  margin-left: -15px;
+}
+.m-posts-l2 {
+  margin-bottom: -20px;
+}
+/*terms, archives*/
+.list-p {
+    line-height: 130%;
+    margin-bottom: 4px;
+    font-size: 14.5px;
+}
+.list-br {
+  margin-bottom: -2em;
+  line-height: 2em;
+}
+.list-time  {
+  line-height: 3em;
+  font-size: 15px;
+}
+
+/* Aside ---------------------------------------------------------- */
+.m-aside {
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+ul.m-aside-l2 {
+  margin: 7px;
+  padding-left: 0;
+  font-size: 14px;
+  margin-left: 17px;
+}
+.aside-badge {
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+  color: #111111;
+  display: inline-flex;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: .75em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  white-space: nowrap;
+  font-size: .75rem;
+}
+.aside-badge-l2 {
+  align-items: center;
+  border-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+  color: #ffffff;
+  display: inline-flex;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: .75em;
+  padding-right: .75em;
+  margin-left: 4px;
+  white-space: nowrap;
+  font-size: .75rem;
+  background-color:#4D80AE;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+}
+/* recent-post */
+#recent-post li  a, .item-category a {
+  color: #4D80AE;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.item-category {
+margin-bottom: -5px;
+}
+
+/* Syntax ---------------------------------------------------------- */
+pre,code  {
+  font-size: 15px;
+}
+pre {
+  border: 1px solid rgb(139, 172, 187);
+  box-shadow:1px 1px 1px rgba(41, 41, 41, 0.2);
+}
+
+/* Summary --------------------------------------------------------*/
+.post-img {
+  background: url(mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: auto;
+  /* membuat gambar scale */
+  position: relative;
+  padding-bottom: 50%;
+}
+.scale {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

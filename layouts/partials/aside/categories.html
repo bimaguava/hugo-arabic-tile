@@ -1,0 +1,19 @@
+<div class="card mb-3 rounded-rightside shadow categories">
+
+  <div class="container m-aside">
+  <h5>Categories</h5>
+  <div class="h-undl-pink"></div>
+  </div>
+
+<ul class="m-aside-l2 p-chapt">
+{{ range first 10 .Site.Taxonomies.categories.ByCount }}
+
+<a href="/categories/{{ .Name | urlize }}">
+  <span class="aside-badge"><i class="fas fa-thumbtack"></i><span style=" margin-left:3px; font-size: 15px;">{{ .Name }}</span> 
+    <span class="aside-badge-l2">{{ .Count }}</span></span>
+</a>
+
+{{ end }}
+</ul>
+
+</div>
