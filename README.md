@@ -1,1 +1,0 @@
-auah gelap
